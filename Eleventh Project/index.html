@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Quaries</title>
+    <style>
+        .box{
+            height: 100px;
+            width: 100px;
+            background-color: orange;
+            border: 2px solid green;
+        }
+        @media screen and (min-width: 250px) and (max-width:300px){
+            .box{
+                border: 5px solid black;
+                height: 200px;
+                width: 200px;
+                background-color: aqua;
+            }
+        }
+        @media screen and (min-width: 500px){
+            .box{
+                border: 5px solid blue;
+                height: 300px;
+                width: 300px;
+                background-color: brown;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

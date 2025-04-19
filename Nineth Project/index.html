@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Model</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            height: 100px;
+            width: 100px;
+            border: 2px solid black;
+            margin: 5px;
+        }
+        #container{
+            height: 300px;
+            width: 600px;
+            border: 2px solid black;
+            margin: 20px;
+            padding: 20px;
+
+
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: center;
+            align-content: start;
+        }
+        #box1{
+            background-color: aqua;
+            order: 4;
+        }
+        #box2{
+            background-color: blue;
+            order: 3;
+        }
+        #box3{
+            background-color: red;
+            order: 2;
+
+        }
+        #box4{
+            background-color: green;
+            order: 1;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="box1" class="box">Item 1</div>
+        <div id="box2" class="box">Item 2</div>
+        <div id="box3" class="box">Item 3</div>
+        <div id="box4" class="box">Item 4</div>
+    </div>
+</body>
+</html>
