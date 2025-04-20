@@ -41,7 +41,7 @@ body{
     /* background-image: url(./images/hero.jpg); */
 }
 .hero_title{
-    color: green;
+    color: white
 }
 .hero_description{
     color: green;
@@ -151,4 +151,251 @@ button{
     padding: 30px;
     flex-basis: 30%;
     height: 400px;
+}
+
+/*Design Image and The Form*/
+.element{
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+    background-color: gray;
+}
+.left_element{
+    flex:1;
+}
+.element_title{
+    color: black;
+}
+.element_form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.element_placeholder{
+    background-color: white;
+    width: 100%;
+    height: 100%;
+}
+.element_list{
+    list-style-type: none;
+    padding-left: 0;
+}
+.element_list_item{
+    color: black;
+    padding: 8px 0;
+    border: 1px solid gray;
+}
+.element_list_item:before{
+    content: "✓";
+    color: green;
+    padding-right: 10px;
+}
+.element_form_groupe{
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+}
+.element_form_groupe label{
+    color: black;
+    font-weight: 500;
+}
+.element_form_groupe input{
+    padding: 12px;
+    border: 1px solid gray;
+    border-radius: 4px;
+    font-family: inherit;
+}
+.element_form_groupe select{
+    padding: 12px;
+    border: 1px solid gray;
+    border-radius: 4px;
+    font-family: inherit;
+}
+
+.element_form_groupe input:focus,.element_form_groupe select{
+    outline: none;
+    border-color: green;
+    box-shadow: 0 0 0 2px rgba(52, 199, 99, 0.2);
+}
+
+.element_form_groupe select{
+    cursor: pointer;
+    background-color: white;
+}
+.element_form_groupe option{
+    padding: 8px;
+}
+.element_button{
+    background-color: green;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.2s;
+}
+.element_button:hover{
+    background-color: darkgreen;
+}
+
+/*Design the Image*/
+.hero{
+    background-image: url(./images/hero.jpg);
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.505);
+    background-blend-mode: overlay;
+    text-align: center;
+    align-content: center;
+}
+.features{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.feature_container{
+    flex-basis: 50%;
+}
+.feature_image_container{
+    flex-basis: 50%;
+}
+.feature_image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.action_title{
+    font-size: 24px;
+    font-weight: 400;
+}
+.action_primary_button:hover{
+    background-color: green;
+    cursor: pointer;
+}
+
+.video_button_primary:hover{
+    background-color: green;
+    color: white;
+    cursor: pointer;
+}
+
+.video_container{
+    background-image: url(./images/video.jpg);
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.05);
+    background-blend-mode: overlay;
+    height: 700px;
+}
+
+.programme_card{
+    background: none;
+    padding: 0;
+    flex-basis: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    height: 500px;
+    border-radius: 8px;
+}
+.programme_card_img{
+    width: 100%;
+    height: 700px;
+    min-height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+.element_image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.programme_button{
+    color: white;
+    background-color: green;
+    margin-top: auto;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/*Footer Design*/
+.footer{
+    background-color: gray;
+    padding: 60px 100px 20px;
+}
+
+.footer_content{
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.footer_logo{
+    flex-basis: 30%;
+}
+.footer_logo img{
+    max-width: 150px;
+    margin-bottom: 20px;
+}
+
+.footer_logo p{
+    margin-bottom: 20px;
+    color: black;
+}
+
+.footer_links{
+    display: flex;
+    gap: 60px;
+}
+
+.footer_link_column h4{
+    color: black;
+    margin-bottom: 20px;
+}
+
+.footer_link_column a{
+    display: block;
+    color: black;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.footer_link_column a:hover{
+    color: green;
+}
+
+.footer_social_media{
+    display: flex;
+    gap: 15px;
+}
+.footer_social_media a{ 
+    color: black;
+    font-size: 20px;
+}
+.footer_social_media a:hover{
+    color: green;
+}
+
+.footer_bottom{
+    border-top: 1px solid gray;
+    padding-top: 20px;
+    text-align: center;
+    color: black;
+}
+
+.footer_button{
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+.footer_button:hover{
+    background-color: darkgreen;
 }
